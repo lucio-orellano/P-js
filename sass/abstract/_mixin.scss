@@ -1,0 +1,5 @@
+@mixin cM ($bgc, $clr, $pdn) {
+    background-color: $bgc;
+    color: $clr;
+    padding: $pdn;
+}

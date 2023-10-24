@@ -1,0 +1,29 @@
+.header {
+    background-color: map-get($mIheader, bg-c);
+    height: map-get($mIheader, hgt);
+    width: map-get($mIheader, wdh);
+    position:map-get($mIheader, pst);
+    top: map-get($mIheader, tp);
+    z-index: map-get($mIheader, z-idx);
+    .icon-nace {
+        font-family: nth($font-f, 8);
+    }
+
+    .collapse {
+        .nav-link {
+            font-family: nth($font-f, 2);
+        }
+        .nav-item {
+            @extend %t-center;
+            color: nth($colores, 9);
+            margin: 8px nth($size, 5);
+            border-radius: nth($size, 4);
+        }
+        .nav-item:hover {
+            background-color: nth($colores, 8);
+        }
+    }
+}
+
+  
+  

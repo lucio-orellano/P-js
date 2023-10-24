@@ -1,0 +1,73 @@
+.title-cta {
+    margin: nth($size, 10);
+    margin-top: nth($size, 13);
+    font-family: nth($font-f, 1);
+    @extend %transform;
+    font-size: nth($size, 8);
+    hr {
+        color: nth($colores, 2);
+    }
+}
+
+.formulario {
+    @extend %orden2;
+    align-items: center;
+    min-height: 70vh;
+    form {
+        @extend %orden1;
+        background-color: nth($colores, 12);
+        @extend %t-center;
+        padding: nth($size, 7) nth($size, 8);
+        box-shadow: 0 1px 5px rgba(0,0 ,0 ,0.16);
+        .title-login {
+            font-size: nth($size, 8);
+            font-weight: 600;
+            margin-bottom: nth($size, 7);
+            font-family: nth($font-f, 2);
+            font-weight: 1000;
+            @extend %transform;
+        }
+        label {
+            margin-bottom: nth($size, 10);
+            .fa-solid {
+                font-size: nth($size, 7);
+                color: nth($colores, 5);
+                margin-right: nth($size, 1);
+            }
+            input {
+                outline: none;
+                border: none;
+                color: nth($colores, 9);
+                border-bottom: solid nth($size, 1) nth($colores, 5);
+                padding: 0 nth($size, 1);
+                font-size: nth($size, 6);
+            }  
+        }
+        .button {
+            @include cM (#A9EECF, #ffff, 1px 15px);
+            border: none;
+            font-size: nth($size, 7);
+            font-family: nth($font-f, 2);
+        }
+        .button:hover {
+            color: nth($colores, 9);
+        }
+        .link {
+            color: nth($colores, 9);
+            margin-bottom: nth($size, 6);
+        }
+        .link-2 {
+            color: nth($colores, 9);
+        }
+       .creAR-cuenta {
+        margin-top: nth($size, 6);
+       } 
+    }
+}
+
+@media (max-width:768px) {
+    .title-cta {
+        text-align: center;
+    }
+}
+    

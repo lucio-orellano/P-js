@@ -1,0 +1,29 @@
+@import'abstract/listas';
+@import'abstract/extend';
+@import'abstract/mixin';
+@import'abstract/maps';
+
+@import'componentes/header-nav';
+@import'componentes/main';
+@import'componentes/carr-inicio';
+@import'componentes/prod-dest';
+@import'componentes/productos';
+@import'componentes/g-talles';
+@import'componentes/contacto';
+@import'componentes/cuenta';
+@import'componentes/footer';
+@import'componentes/carrito';
+
+*, 
+*::after, 
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    background: #A9EECF;
+    background: -webkit-linear-gradient(to right, #D3EAE5, #A9EECF);
+    background: linear-gradient(to right, #D3EAE5, #A9EECF);
+}

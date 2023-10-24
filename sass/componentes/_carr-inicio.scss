@@ -1,0 +1,16 @@
+.carousel {
+    .carousel-inner {
+        width: 90%; 
+        height:50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel {
+        .carousel-inner {
+            height: 50%;
+        }
+    }
+}
+
